@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Basic';
+  title : string;
+  show: boolean = true;
+  display() {
+    this.show = !this.show;
+  }
 }
